@@ -2,36 +2,6 @@
   flex: 1;
 }
 
-.toolbar {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  column-gap: 8px;
-  width: 100%;
-  padding: 12px 16px;
-  background-color: #1976d2;
-  color: white;
-  font-weight: 600;
-}
-
-// .toolbar img {
-//   margin: 0 16px;
-// }
-
-.toolbar #twitter-logo {
-  height: 40px;
-  margin-left: auto;
-}
-
-.toolbar #youtube-logo {
-  height: 40px;
-}
-
-.toolbar #twitter-logo:hover,
-.toolbar #youtube-logo:hover {
-  opacity: 0.8;
-}
-
 .content {
   display: flex;
   margin: 82px auto 32px;
