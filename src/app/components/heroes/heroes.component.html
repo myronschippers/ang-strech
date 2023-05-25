@@ -6,3 +6,13 @@
 <h2>{{ hero.name | uppercase }} Details</h2>
 <div><span>id: </span>{{ hero.id }}</div>
 <div><span>name: </span>{{ hero.name }}</div>
+
+<h2>My Heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let indvHero of heroes">
+    <button type="button">
+      <span class="badge">{{ indvHero.id }}</span>
+      <span class="name">{{ indvHero.name }}</span>
+    </button>
+  </li>
+</ul>

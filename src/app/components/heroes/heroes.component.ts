@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HEROES } from '../../constants';
 import { Hero } from '../../types';
 
 @Component({
@@ -11,4 +12,6 @@ export class HeroesComponent {
     id: 1,
     name: 'Windstorm',
   };
+
+  heroes: Hero[] = HEROES;
 }
