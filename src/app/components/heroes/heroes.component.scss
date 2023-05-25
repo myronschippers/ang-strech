@@ -1,0 +1,51 @@
+.heroes-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  & > * {
+    margin-bottom: 0.8rem;
+  }
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.hero-block {
+  display: flex;
+  align-items: stretch;
+  column-gap: 0;
+  width: 100%;
+  // padding: 0.8rem;
+  border: 2px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.hero-block--badge {
+  display: block;
+  width: 5rem;
+  padding: 1.2rem 0;
+  border-radius: 3px;
+  border-radius: 6px 0 0 6px;
+  background-color: #43118e;
+  color: #fafafa;
+  line-height: 1;
+  text-align: center;
+}
+
+.hero-block--name {
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+  border-radius: 0 6px 6px 0;
+  background-color: #bfcad4;
+  color: #181d21;
+}
+
+.selected {
+  border: 2px solid #7d2cf6;
+}

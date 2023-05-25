@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { HEROES } from '../../constants';
 import { Hero } from '../../types';
 
@@ -14,4 +14,9 @@ export class HeroesComponent {
   };
 
   heroes: Hero[] = HEROES;
+
+  selectedHero?: Hero;
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+  }
 }
